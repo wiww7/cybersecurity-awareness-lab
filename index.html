@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <section class="login-card">
+
+        <h1 class="logo">Instagram</h1>
+
+        <p class="subtitle">Connectez-vous pour continuer</p>
+
+        <form id="loginForm">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="E-mail ou nom d'utilisateur "
+                autocomplete="off"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Mot de passe "
+                autocomplete="off"
+                required
+            >
+
+            <label class="show-password">
+                <input type="checkbox" id="showPassword">
+                Afficher le mot de passe
+            </label>
+
+            <button type="submit">Se connecter</button>
+
+        </form>
+
+        <div class="separator"><span>OU</span></div>
+
+        <a href="#" class="forgot">Mot de passe oublié ?</a>
+
+    </section>
+
+    <section class="signup-card">
+        Vous n'avez pas de compte ?
+        <a href="#">Créer un compte </a>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

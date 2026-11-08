@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 15px;
+    color: #262626;
+}
+
+.container {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.simulation-label {
+    background: #fff3cd;
+    color: #795600;
+    border: 1px solid #e8d18a;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.login-card {
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    padding: 35px 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 42px;
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #737373;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+#loginForm {
+    width: 100%;
+    text-align: left;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    background: #fafafa;
+    font-size: 12px;
+    text-align: left;
+    outline: none;
+}
+
+#loginForm input:focus {
+    border-color: #999999;
+    background: white;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+    font-size: 12px;
+    color: #555;
+    margin: 12px 0 18px;
+    text-align: left;
+}
+
+.show-password input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #3797ef;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1877d2;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #b42318;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.forgot {
+    display: inline-block;
+    color: #385185;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.signup-card {
+    background: white;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.signup-card a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.security-note {
+    margin-top: 18px;
+    font-size: 11px;
+    color: #777;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.results-card {
+    background: white;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    margin-top: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+.results-card h2 {
+    font-size: 17px;
+    color: #262626;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#resultsList {
+    list-style: none;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#resultsList li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    text-align: left;
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .login-card {
+        padding: 28px 20px;
+    }
+}
+
+.thank-you {
+    padding: 45px 30px;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background: #e8f7ed;
+    color: #249653;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 20px auto;
+}
+
+.thank-you h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.thank-you p {
+    font-size: 14px;
+    color: #737373;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.thank-you .goodbye {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #262626;
+}
